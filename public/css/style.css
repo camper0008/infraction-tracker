@@ -1,0 +1,18 @@
+body {
+    margin: 1rem;
+    margin-top: 4rem;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+}
+
+ol {
+    width: max-content;
+    margin: 0 auto;
+}
+
+li {
+    padding-bottom: 1em;
+    font-size: 1.25em;
+}
