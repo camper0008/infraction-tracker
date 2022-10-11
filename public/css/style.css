@@ -1,18 +1,60 @@
 body {
     margin: 1rem;
     margin-top: 4rem;
-    background-color: #202020;
+    background-color: #222;
     color: white;
     text-align: center;
-    font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+    font-family: "Roboto Mono", monospace;
 }
 
-ol {
+ol,
+ul {
     width: max-content;
     margin: 0 auto;
+}
+
+ul {
+    list-style: "";
+    padding-left: 0;
 }
 
 li {
     padding-bottom: 1em;
     font-size: 1.25em;
+}
+
+.create-and-key-container {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.api-key-container {
+    display: flex;
+    align-items: center;
+}
+
+.api-key-container input {
+    flex: 1;
+    margin-left: 1ch;
+}
+
+input,
+button {
+    border: none;
+    background-color: #444;
+    padding: 0.5em;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+
+input:disabled {
+    opacity: 0.5;
+}
+
+.form-pair {
+    margin-bottom: 1rem;
 }

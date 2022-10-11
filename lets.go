@@ -30,6 +30,7 @@ func bindPageRoutes(router *gin.Engine, sharedContext endpoints.SharedContext) {
 	router.LoadHTMLGlob("templates/*")
 
 	router.GET("/", sharedContext.PageGetIndex)
+	router.GET("/admin", sharedContext.PageGetAdmin)
 }
 
 func bindStaticFiles(router *gin.Engine) {

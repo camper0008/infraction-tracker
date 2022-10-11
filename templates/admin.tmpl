@@ -2,10 +2,35 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/style.css">
     </head>
     <body>
-        admin
+        <div class="create-and-key-container">
+            <div class="form-pair api-key-container">
+                <label for="api-key">API Key</label>
+                <input id="api-key" type="password">
+            </div>
+            <div class="form-pair">
+                <label for="create-name">Name</label>
+                <input id="create-name" type="text" value="">
+                <button onclick="(() => add())()">Add</button>
+            </div>
+        </div>
+
+        <ul>
+            {{range .list}} 
+            <div class="form-pair">
+                <label for="name-{{.Name}}">Name</label>
+                <input id="name-{{.Name}}" type="text" disabled value="{{.Name}}">
+                <label for="count-{{.Name}}">Count</label>
+                <input id="count-{{.Name}}" type="number" value="{{.Count}}">
+                <button onclick="(() => update('{{.Name}}'))()">Update</button>
+                <button onclick="(() => remove('{{.Name}}'))()">Remove</button>
+            </div>
+            {{end}}
+        </ul>
+
+        <script src="/static/js/admin.js"></script>
     </body>
 </html>
