@@ -24,22 +24,7 @@ type MemoryDb struct {
 	punishees []models.Punishee
 }
 
-func (db *MemoryDb) Init() {
-	db.punishees = []models.Punishee{
-		models.Punishee{
-			Name:  "test1",
-			Count: 0,
-		},
-		models.Punishee{
-			Name:  "test3",
-			Count: 3,
-		},
-		models.Punishee{
-			Name:  "test2",
-			Count: 2,
-		},
-	}
-}
+func (db *MemoryDb) Init() {}
 func (db *MemoryDb) List() ([]models.Punishee, error) {
 	// make explicit copy to prevent modification outside database
 	cp := make([]models.Punishee, len(db.punishees))
