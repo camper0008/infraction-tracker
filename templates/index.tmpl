@@ -2,14 +2,14 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/style.css">
     </head>
     <body>
         <h1>Leaderboard</h1>
         <ol>
         {{range .list}} 
-            <li>{{ .Name }} - {{ .Count }}</li>
+            <li><div class="leaderboard-item">{{ .Name }} <span>- {{ .Count }}</span></div></li>
         {{end}}
         </ol>
     </body>

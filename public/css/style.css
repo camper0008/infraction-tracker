@@ -3,8 +3,11 @@ body {
     margin-top: 4rem;
     background-color: #222;
     color: white;
-    text-align: center;
     font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+    text-align: center;
 }
 
 ol,
@@ -40,6 +43,16 @@ li {
     margin-left: 1ch;
 }
 
+button {
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+}
+button:active {
+    opacity: 0.8;
+}
+
 input,
 button {
     border: none;
@@ -57,4 +70,14 @@ input:disabled {
 
 .form-pair {
     margin-bottom: 1rem;
+}
+
+.leaderboard-item {
+    display: flex;
+}
+
+.leaderboard-item span {
+    flex: 1;
+    margin-left: 1ch;
+    text-align: right;
 }
