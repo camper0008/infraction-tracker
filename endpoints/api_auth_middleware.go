@@ -3,7 +3,8 @@ package endpoints
 import (
 	"net/http"
 
-	"git.skillissue.dk/env"
+	"infraction-tracker/env"
+
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,9 +3,10 @@ package main
 import (
 	"time"
 
-	"git.skillissue.dk/db_impl"
-	"git.skillissue.dk/endpoints"
-	"git.skillissue.dk/env"
+	"infraction-tracker/db_impl"
+	"infraction-tracker/endpoints"
+	"infraction-tracker/env"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	_ "github.com/joho/godotenv/autoload"

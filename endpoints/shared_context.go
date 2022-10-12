@@ -1,6 +1,6 @@
 package endpoints
 
-import "git.skillissue.dk/models"
+import "infraction-tracker/models"
 
 type SharedContext struct {
 	Db models.Db

@@ -4,7 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"git.skillissue.dk/models"
+	"infraction-tracker/models"
+
 	"github.com/gin-gonic/gin"
 )
 

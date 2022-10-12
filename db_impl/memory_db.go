@@ -3,7 +3,7 @@ package db_impl
 import (
 	"fmt"
 
-	"git.skillissue.dk/models"
+	"infraction-tracker/models"
 )
 
 func punisheeIdx(ps []models.Punishee, name string) (int, error) {

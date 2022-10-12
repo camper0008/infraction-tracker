@@ -1,4 +1,4 @@
-module git.skillissue.dk
+module infraction-tracker
 
 go 1.19
 
