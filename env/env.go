@@ -1,14 +1,18 @@
 package env
 
-import "os"
+import (
+	"fmt"
+	"os"
+)
 
 func EnvironmentVariablesSpecified() {
-	if os.Getenv("DOMAIN") == "" {
-		panic("DOMAIN environment variable not set")
-	}
+	required := []string{"DOMAIN", "API_KEY"}
 
-	if os.Getenv("API_KEY") == "" {
-		panic("API_KEY environment variable not set")
+	for i := range required {
+		if os.Getenv(required[i]) == "" {
+			panic(fmt.Sprintf("%s environment variable not set", required[i]))
+		}
+
 	}
 }
 
